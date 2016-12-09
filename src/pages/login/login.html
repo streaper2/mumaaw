@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Login page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  
+
+
+  <ion-item>
+    <ion-label color="primary" floating>Nom</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" floating>Prenom</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+<button ion-button color="danger">Annuler</button>
+<button ion-button>Connexion</button>
+
+<ion-item><a>CGU</a> <a [navPush]="inscriptionpage">s'inscrire</a></ion-item>
+
+
+
+</ion-content>
