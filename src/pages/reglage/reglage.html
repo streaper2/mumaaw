@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Réglage </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-item>
+      <ion-label> Géolocalisation</ion-label>
+      <ion-toggle  checked="false"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label> Notification</ion-label>
+      <ion-toggle  checked="false"></ion-toggle>
+    </ion-item>
+
+<ion-list>
+  <ion-item>
+    <ion-label>Langue</ion-label>
+    <ion-select [(ngModel)]="Langue">
+      <ion-option value="nes" selected="true" >Francais</ion-option>
+      <ion-option value="n64">Anglais</ion-option>
+      <ion-option value="ps">Espagnol</ion-option>
+      <ion-option value="genesis">Italien</ion-option>
+      <ion-option value="saturn">Alleman</ion-option>
+      <ion-option value="snes">russe</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+</ion-content>
